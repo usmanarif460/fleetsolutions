@@ -1,7 +1,6 @@
 <template>
-    <TheHeader />
+  <TheHeader />
+  <TheHugeSecretSection />
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
