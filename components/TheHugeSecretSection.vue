@@ -1,6 +1,6 @@
 <template>
   <section class="flex items-center justify-center py-[80px] bg-purple">
-    <div class="p-2.5 text-white text-center">
+    <div class="p-2.5 text-white text-center max-w-[800px]">
       <h2 class="text-[52px] mb-4 font-medium">
         We're Going To
         <strong class="font-bold">Let You In On A Huge Secret...</strong>
@@ -8,7 +8,7 @@
       <div class="mb-4">
         <p class="mb-4">
           If you don’t have a professional website, your business is more than
-          80% less likely to succeed.
+          80% <span class="underline">less</span> likely to succeed.
         </p>
         <p class="mb-4">
           A Facebook or Instagram page just isn’t going to cut it. On average,
