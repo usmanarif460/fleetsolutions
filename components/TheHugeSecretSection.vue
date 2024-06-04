@@ -1,7 +1,7 @@
 <template>
   <section class="flex items-center justify-center py-[80px] bg-purple">
     <div class="p-2.5 text-white text-center max-w-[800px]">
-      <h2 class="lg:text-[52px] mb-4 font-medium">
+      <h2 class="lg:text-[52px] mb-4 font-medium uppercase">
         We're Going To
         <strong class="font-bold">Let You In On A Huge Secret...</strong>
       </h2>

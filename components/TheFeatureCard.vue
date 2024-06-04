@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-center px-6 py-8 m-4 bg-white hover:bg-purple rounded-lg shadow-lg"
+    class="flex items-center justify-center px-6 py-8 m-4 bg-white hover:text-white hover:bg-purple rounded-xl shadow-lg transition-all"
   >
     <div>
       <figure class="w-28 mb-5">
@@ -12,9 +12,9 @@
         />
       </figure>
       <div class="flex items-center flex-col gap-4">
-        <h4>
+        <h3 class="font-bold text-3xl uppercase w-full">
           {{ heading }}
-        </h4>
+        </h3>
         <p>
           {{ description }}
         </p>
