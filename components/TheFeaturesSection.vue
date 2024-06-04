@@ -19,34 +19,34 @@
           img-url="/images/crown-left.png"
           img-height="50"
           img-width="50"
-          heading="mobile optimized"
-          description="With over 50% of internet traffic coming from cell phones, we make sure your site is fully mobile optimized."
+          heading="Stunning designs"
+          description="We use some of the world’s most cutting-edge website designs, built by leading graphic designers."
         />
         <TheFeatureCard
           img-url="/images/crown-left.png"
           img-height="50"
           img-width="50"
-          heading="mobile optimized"
-          description="With over 50% of internet traffic coming from cell phones, we make sure your site is fully mobile optimized."
+          heading="SEO ready"
+          description="We ensure that your website is set up to rank highly on Google and other search engines."
         />
         <TheFeatureCard
           img-url="/images/crown-left.png"
           img-height="50"
           img-width="50"
-          heading="mobile optimized"
-          description="With over 50% of internet traffic coming from cell phones, we make sure your site is fully mobile optimized."
+          heading="Maximum load speed"
+          description="We make sure your website visitors don’t wait a millisecond longer than they have to."
         /><TheFeatureCard
           img-url="/images/crown-left.png"
           img-height="50"
           img-width="50"
-          heading="mobile optimized"
-          description="With over 50% of internet traffic coming from cell phones, we make sure your site is fully mobile optimized."
+          heading="Cutting-edge security"
+          description="All our websites have the leading security features installed, including automated daily back-ups."
         /><TheFeatureCard
           img-url="/images/crown-left.png"
           img-height="50"
           img-width="50"
-          heading="mobile optimized"
-          description="With over 50% of internet traffic coming from cell phones, we make sure your site is fully mobile optimized."
+          heading="Easily customizable"
+          description="We’ll show you how to edit your own website so you’ll never have to hire a web developer."
         />
       </div>
     </div>

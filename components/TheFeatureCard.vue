@@ -12,7 +12,7 @@
         />
       </figure>
       <div class="flex items-center flex-col gap-4">
-        <h3 class="font-bold text-3xl uppercase w-full">
+        <h3 class="font-bold text-2xl uppercase w-full">
           {{ heading }}
         </h3>
         <p>
