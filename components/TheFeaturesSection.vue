@@ -1,7 +1,7 @@
 <template>
   <section class="py-[180px] flex items-center justify-center">
     <div class="max-w-7xl">
-      <h2 class="lg:text-[52px] mb-4 font-medium uppercase">
+      <h2 class="lg:text-huge mb-4 font-medium uppercase text-center">
         A professional
         <strong class="font-bold">website that you'll love.</strong>
       </h2>

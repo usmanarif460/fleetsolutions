@@ -3,7 +3,7 @@
     class="flex items-center justify-center bg-neutral-300 py-[180px] relative"
   >
     <div class="max-w-7xl p-2.5">
-      <h2 class="uppercase lg:text-[52px] pb-5 mb-4">
+      <h2 class="uppercase lg:text-huge pb-5 mb-4">
         Take a <strong>look on few examples</strong>
       </h2>
       <Carousel :items-to-show="2">
