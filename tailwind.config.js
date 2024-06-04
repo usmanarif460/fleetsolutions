@@ -26,6 +26,8 @@ export default {
         lightGray: "rgb(161,161,161)",
         active: "#fffcf3",
         purple: "#955AE8",
+        "accent-1": "#3366ff",
+        "accent-2": "#00ccff",
       },
       fontSize: {
         huge: "52px",
