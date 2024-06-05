@@ -5,7 +5,7 @@
     <div
       class="max-w-7xl mx-auto w-full flex flex-col items-center justify-center gap-5"
     >
-      <TheLogo />
+      <TheLogo class="self-start" />
       <div class="flex w-full items-center justify-center">
         <div class="flex gap-5 items-center justify-center w-6/12">
           <img src="/images/crown-left.png" alt="" />
