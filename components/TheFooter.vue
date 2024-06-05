@@ -94,6 +94,67 @@
           </div>
         </div>
       </div>
+      <div
+        class="py-12 grid lg:grid-cols-4 border-b place-content-between w-full"
+      >
+        <div class="col-span-2 grid lg:grid-cols-2">
+          <div class="flex flex-col gap-4">
+            <h4 class="font-bold text-2xl uppercase text-white">Navigation</h4>
+            <ol class="flex flex-col">
+              <li
+                v-for="link in primaryLinks"
+                :key="link.link"
+                class="text-white opacity-80 hover:opacity-100 transition-all py-1 text-xl font-semibold"
+              >
+                <a :href="link.link">
+                  {{ link.text }}
+                </a>
+              </li>
+            </ol>
+          </div>
+          <div class="self-end justify-start mr-auto">
+            <ol class="flex flex-col">
+              <li
+                v-for="link in secondaryLinks"
+                :key="link.link"
+                class="text-white opacity-80 hover:opacity-100 transition-all py-1 text-xl font-semibold"
+              >
+                <a :href="link.link">
+                  {{ link.text }}
+                </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4">
+          <h4 class="font-bold text-2xl uppercase text-white">Resources</h4>
+          <ol class="flex flex-col">
+            <li
+              v-for="link in resources"
+              :key="link.link"
+              class="text-white opacity-80 hover:opacity-100 transition-all py-1 text-xl font-semibold"
+            >
+              <a :href="link.link">
+                {{ link.text }}
+              </a>
+            </li>
+          </ol>
+        </div>
+        <div class="flex flex-col gap-4 place-self-end">
+          <h4 class="font-bold text-2xl uppercase text-white">Social Media</h4>
+          <ol class="flex flex-col">
+            <li
+              v-for="link in socialMedia"
+              :key="link.link"
+              class="text-white opacity-80 hover:opacity-100 transition-all py-1 text-xl font-semibold"
+            >
+              <a :href="link.link">
+                {{ link.text }}
+              </a>
+            </li>
+          </ol>
+        </div>
+      </div>
     </div>
   </footer>
 </template>
@@ -101,4 +162,94 @@
 const address = "8 The Green, Ste A  Dover, DE 19901";
 const phone = "(302) 219-0702";
 const email = "test@123.gmail.com";
+const primaryLinks = [
+  {
+    text: "Home",
+    link: "/",
+  },
+  {
+    text: "How It works",
+    link: "/how-it-works",
+  },
+  {
+    text: "Examples",
+    link: "/examples",
+  },
+  {
+    text: "Social Impact",
+    link: "/social-impact",
+  },
+  {
+    text: "FAQs",
+    link: "faqs",
+  },
+];
+const secondaryLinks = [
+  {
+    text: "Apply",
+    link: "/apply",
+  },
+  {
+    text: "Why We Do This",
+    link: "/why-do-this",
+  },
+  {
+    text: "Our Story",
+    link: "/story",
+  },
+  {
+    text: "Affiliate Program",
+    link: "/affiliate-programs",
+  },
+  {
+    text: "Additional Services",
+    link: "/additional-services",
+  },
+];
+const resources = [
+  {
+    text: "Services",
+    link: "/services",
+  },
+  {
+    text: "Blogs",
+    link: "/blogs",
+  },
+  {
+    text: "Tools",
+    link: "/tools",
+  },
+  {
+    text: "Videos",
+    link: "/videos",
+  },
+  {
+    text: "Reviews",
+    link: "/reviews",
+  },
+];
+
+// Update Links To orignal accounts
+const socialMedia = [
+  {
+    text: "facebook",
+    link: "/services",
+  },
+  {
+    text: "Youtube",
+    link: "/blogs",
+  },
+  {
+    text: "Instagram",
+    link: "/tools",
+  },
+  {
+    text: "Behance",
+    link: "/videos",
+  },
+  {
+    text: "Linkedin",
+    link: "/reviews",
+  },
+];
 </script>
