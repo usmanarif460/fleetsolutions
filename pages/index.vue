@@ -7,4 +7,8 @@
   <TheFamousReview />
 </template>
 
-<script setup></script>
+<script setup>
+useHead({
+  title: 'Fleet Solutions',
+});
+</script>
