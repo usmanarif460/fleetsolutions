@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gradient-to-r from-indigo-100 to-violet-400 h-screen w-full object-cover"
+    class="bg-gradient-to-r from-indigo-100 to-violet-400 w-full object-cover"
   >
     <div
       class="max-w-7xl mx-auto w-full flex flex-col items-center justify-center gap-5"

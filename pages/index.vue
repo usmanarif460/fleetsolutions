@@ -1,14 +1,16 @@
 <template>
-  <TheHeader />
-  <TheHugeSecretSection />
-  <TheExample />
-  <TheFeaturesSection />
-  <TheGuideSection />
-  <TheFamousReview />
+  <main class="overflow-x-hidden">
+    <TheHeader />
+    <TheHugeSecretSection />
+    <TheExample />
+    <TheFeaturesSection />
+    <TheGuideSection />
+    <TheFamousReview />
+  </main>
 </template>
 
 <script setup>
 useHead({
-  title: 'Fleet Solutions',
+  title: "Fleet Solutions",
 });
 </script>
