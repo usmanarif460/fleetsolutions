@@ -155,6 +155,17 @@
           </ol>
         </div>
       </div>
+      <div class="pt-12 flex items-center justify-between text-white">
+        <p>
+          &copy; 2023
+          <span class="font-bold uppercase text-primary">Fleet solutions</span>.
+          All rights reserved.
+        </p>
+        <nav class="flex gap-4">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms-and-conditions">Terms And Conditions</a>
+        </nav>
+      </div>
     </div>
   </footer>
 </template>
