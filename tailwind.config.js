@@ -5,6 +5,8 @@ export default {
     extend: {
       backgroundImage: {
         "header-img": "url('/images/header-img.jpg')",
+        "header-img-2": "url('/images/header-img-2.png')",
+
         // 'project-header': "url('/images/project-header.jpg')",
         // 'project-profile-header': "url('/images/project-pic.jpg')",
         // 'builder-profile-header': "url('/images/builder-profile.jpg')",
