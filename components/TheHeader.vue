@@ -18,9 +18,7 @@
         </div>
       </div>
 
-      <h1
-        class="w-10/12 text-center text-white text-[3rem] uppercase font-bold"
-      >
+      <h1 class="w-10/12 text-center text-white text-huge uppercase font-bold">
         Design Your website, promote it, develop it and grow your
         <span class="underline text-primary">business</span>
         with us.
