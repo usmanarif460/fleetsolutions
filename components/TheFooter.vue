@@ -1,7 +1,9 @@
 <template>
   <footer class="py-20 flex items-center justify-center bg-indigo-900">
     <div class="max-w-6xl">
-      <div class="pb-16 grid lg:grid-cols-4 border-b">
+      <div
+        class="pb-16 grid sm:grid-cols-2 md:grid-cols-4 border-b px-8 lg:px-0"
+      >
         <div class="flex items-center justify-center p-2.5 mr-8">
           <img
             src="/public/images/logo.png"
@@ -10,7 +12,7 @@
             height="118"
           />
         </div>
-        <div class="flex items-center justify-center gap-4">
+        <div class="flex items-center lg:justify-center gap-4">
           <span
             class="flex items-center justify-center !h-14 !w-14 bg-white/30 rounded-full text-white"
           >
@@ -41,7 +43,7 @@
             </address>
           </div>
         </div>
-        <div class="flex items-center justify-center gap-4">
+        <div class="flex items-center lg:justify-center gap-4">
           <span
             class="flex items-center justify-center !h-14 !w-14 bg-white/30 rounded-full text-white"
           >
@@ -67,7 +69,7 @@
             </span>
           </div>
         </div>
-        <div class="flex items-center justify-center gap-4">
+        <div class="flex items-center lg:justify-center gap-4">
           <span
             class="flex items-center justify-center !h-14 !w-14 bg-white/30 rounded-full text-white"
           >
@@ -95,38 +97,37 @@
         </div>
       </div>
       <div
-        class="py-12 grid lg:grid-cols-4 border-b place-content-between w-full"
+        class="py-12 grid sm:grid-cols-2 lg:grid-cols-4 border-b place-items-center sm:place-content-between w-full px-8 lg:px-0"
       >
-        <div class="col-span-2 grid lg:grid-cols-2">
-          <div class="flex flex-col gap-4">
-            <h4 class="font-bold text-2xl uppercase text-white">Navigation</h4>
-            <ol class="flex flex-col">
-              <li
-                v-for="link in primaryLinks"
-                :key="link.link"
-                class="text-white opacity-80 hover:opacity-100 transition-all py-1 text-xl font-semibold"
-              >
-                <a :href="link.link">
-                  {{ link.text }}
-                </a>
-              </li>
-            </ol>
-          </div>
-          <div class="self-end justify-start mr-auto">
-            <ol class="flex flex-col">
-              <li
-                v-for="link in secondaryLinks"
-                :key="link.link"
-                class="text-white opacity-80 hover:opacity-100 transition-all py-1 text-xl font-semibold"
-              >
-                <a :href="link.link">
-                  {{ link.text }}
-                </a>
-              </li>
-            </ol>
-          </div>
+        <div class="flex flex-col gap-4 sm:place-self-start">
+          <h4 class="font-bold text-2xl uppercase text-white">Navigation</h4>
+          <ol class="flex flex-col">
+            <li
+              v-for="link in primaryLinks"
+              :key="link.link"
+              class="text-white opacity-80 hover:opacity-100 transition-all py-1 text-xl font-semibold"
+            >
+              <a :href="link.link">
+                {{ link.text }}
+              </a>
+            </li>
+          </ol>
         </div>
-        <div class="flex flex-col gap-4">
+        <div class="">
+          <ol class="flex flex-col">
+            <li
+              v-for="link in secondaryLinks"
+              :key="link.link"
+              class="text-white opacity-80 hover:opacity-100 transition-all py-1 text-xl font-semibold"
+            >
+              <a :href="link.link">
+                {{ link.text }}
+              </a>
+            </li>
+          </ol>
+        </div>
+
+        <div class="flex flex-col gap-4 pb-12 sm:pb-0 sm:place-self-start">
           <h4 class="font-bold text-2xl uppercase text-white">Resources</h4>
           <ol class="flex flex-col">
             <li
@@ -140,7 +141,7 @@
             </li>
           </ol>
         </div>
-        <div class="flex flex-col gap-4 place-self-end">
+        <div class="flex flex-col gap-4 sm:place-self-end">
           <h4 class="font-bold text-2xl uppercase text-white">Social Media</h4>
           <ol class="flex flex-col">
             <li
@@ -155,7 +156,9 @@
           </ol>
         </div>
       </div>
-      <div class="pt-12 flex items-center justify-between text-white">
+      <div
+        class="pt-12 flex flex-wrap items-center justify-between text-white px-8 lg:px-0"
+      >
         <p>
           &copy; 2023
           <span class="font-bold uppercase text-primary">Fleet solutions</span>.
