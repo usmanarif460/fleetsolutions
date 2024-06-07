@@ -1,17 +1,14 @@
 <template>
   <div>
-    <img
-      class="w-24 h-24 object-cover"
-      :class="className"
-      src="/images/2.png"
-      alt=""
-    />
+    <img class="w-24 h-24 object-cover" :class="className" src="/images/2.png" alt="" />
   </div>
 </template>
 
 <script setup>
 defineProps: ({
-  className: String,
-  default: "",
+  className: {
+    type: String,
+    default: "",
+  }
 });
 </script>
