@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gradient-to-r from-indigo-100 to-violet-400 w-full object-cover pb-[5vh]"
+    class="bg-gradient-to-r from-indigo-100 to-violet-400 w-full object-cover pb-[5vh] min-h-[60vh]"
   >
     <div
       class="max-w-7xl mx-auto w-full flex flex-col items-center justify-center gap-5 px-12"
@@ -19,7 +19,7 @@
       </div>
 
       <h1
-        class="text-center text-white text-4xl lg:text-huge uppercase font-bold"
+        class="text-center text-white text-4xl lg:text-huge lg:leading-10 uppercase font-bold"
       >
         Design Your website, promote it, develop it and grow your
         <span class="underline text-primary">business</span>

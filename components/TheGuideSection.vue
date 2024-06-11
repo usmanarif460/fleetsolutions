@@ -1,8 +1,8 @@
 <template>
   <section class="flex items-center justify-center py-[150px]">
     <div class="max-w-7xl">
-      <div class="grid lg:grid-cols-2">
-        <div class="p-2.5">
+      <div class="grid grid-cols-2 gap-12">
+        <div class="p-2.5 col-span-2 md:col-span-1">
           <h2 class="pb-2.5 mb-4 lg:text-huge uppercase">
             we'll <strong>guid you step by step.</strong>
           </h2>
@@ -17,7 +17,9 @@
             founders to elderly business owners who need some extra support.
           </p>
         </div>
-        <div class="flex justify-end">
+        <div
+          class="flex justify-center md:justify-end col-span-2 md:col-span-1"
+        >
           <div class="w-96 h-96 bg-red-500"></div>
         </div>
         <div class="col-span-2 flex items-center justify-center p-12">
