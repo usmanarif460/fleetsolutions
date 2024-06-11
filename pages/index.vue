@@ -1,6 +1,7 @@
 <template>
   <main class="overflow-x-hidden">
     <TheHeader />
+    <TheComparisonSection />
     <TheFamousWebsitesSection />
     <TheHugeSecretSection />
     <TheExample />
