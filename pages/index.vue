@@ -1,7 +1,7 @@
 <template>
   <main class="overflow-x-hidden">
     <TheHeader />
-    <TheWebsitesCountSection />
+    <TheFamousWebsitesSection />
     <TheHugeSecretSection />
     <TheExample />
     <TheFeaturesSection />
