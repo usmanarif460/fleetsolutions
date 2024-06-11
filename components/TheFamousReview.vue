@@ -1,6 +1,8 @@
 <template>
   <section class="py-14 bg-purple flex items-center justify-center">
-    <div class="flex max-w-7xl items-center gap-5">
+    <div
+      class="flex flex-col md:flex-row max-w-7xl items-center gap-5 px-8 lg:px-0"
+    >
       <div class="p-2.5">
         <a href="#">
           <div class="w-[267px] h-[267px] bg-white/30 rounded-full">
@@ -14,7 +16,7 @@
         >
           “The Free Website Guys is the highest-rated web development company.”
         </blockquote>
-        <div class="flex text-xl items-center">
+        <div class="flex flex-col sm:flex-row text-xl items-center">
           <div class="flex-1 p-2.5 mb-4">
             <p class="text-accent-1">
               <a href="#" class="text-accent-2 underline hover:no-underline"
@@ -23,7 +25,7 @@
               <span class="text-white">- Hostinger</span>
             </p>
           </div>
-          <div class="p-2.5 w-44">
+          <div class="p-2.5 w-44 self-start sm:self-center">
             <div class="text-white font-black mb-4">Five Star Here</div>
             <p>4.9 Out of 5</p>
           </div>

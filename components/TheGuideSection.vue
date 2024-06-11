@@ -1,7 +1,7 @@
 <template>
   <section class="flex items-center justify-center py-[150px]">
-    <div class="max-w-7xl">
-      <div class="grid grid-cols-2 gap-12">
+    <div class="max-w-7xl px-8 lg:px-0">
+      <div class="grid grid-cols-2 gap-12 items-center">
         <div class="p-2.5 col-span-2 md:col-span-1">
           <h2 class="pb-2.5 mb-4 lg:text-huge uppercase">
             we'll <strong>guid you step by step.</strong>
