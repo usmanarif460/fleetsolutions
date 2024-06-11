@@ -6,6 +6,7 @@
     <TheFeaturesSection />
     <TheGuideSection />
     <TheFamousReview />
+    <TheConvinceSection />
     <TheFooter />
   </main>
 </template>
