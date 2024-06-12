@@ -1,6 +1,8 @@
 <template>
-  <blockquote class="py-10 px-8 bg-white block w-80 shadow-lg rounded-xl mt-12">
-    <div class="flex flex-col gap-8 mb-6">
+  <blockquote
+    class="flex flex-col py-10 px-8 bg-white justify-between w-80 shadow-lg rounded-xl mt-12 h-[510px] overflow-auto"
+  >
+    <div class="flex flex-col gap-8 mb-6 h-full">
       <div class="flex items-center gap-2">
         <span
           v-for="star in stars"
@@ -26,9 +28,11 @@
           </svg>
         </span>
       </div>
-      <p class="text-zinc-700 text-left text-xl">
-        {{ reviewText }}
-      </p>
+      <div class="flex-1 flex items-center">
+        <p class="text-zinc-700 text-left text-xl">
+          {{ reviewText }}
+        </p>
+      </div>
     </div>
     <footer class="flex items-center justify-between">
       <div class="flex items-center gap-2">
