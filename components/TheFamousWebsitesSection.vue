@@ -8,7 +8,7 @@
         <li
           v-for="project in Projects"
           :key="project.demoLink"
-          class="h-48 px-12 flex items-center justify-center bg-primary hover:bg-primary/80 transition-all cursor-pointer rounded-lg shadow-md"
+          class="h-48 px-12 flex items-center justify-center bg-primary hover:bg-primary/80 hover:-translate-y-3 transition-all cursor-pointer rounded-lg shadow-md"
         >
           <a :href="project.demoLink" target="blank">
             <img
@@ -36,6 +36,10 @@ const Projects = [
   {
     demoLink: "https://hacking-hr.vercel.app",
     logo: "https://hacking-hr.vercel.app/assets/logo.svg",
+  },
+  {
+    demoLink: "https://edu-kappa.vercel.app/",
+    logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJNGV-Q82yioJHzstZvfUpHUBFCesTcGmkEw&s",
   },
 ];
 </script>
