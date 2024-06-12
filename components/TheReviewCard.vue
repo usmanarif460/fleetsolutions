@@ -36,7 +36,7 @@
     </div>
     <footer class="flex items-center justify-between">
       <div class="flex items-center gap-2">
-        <h5 class="text-zinc-900 font-bold text-3xl">
+        <h5 class="text-purple capitalize font-bold text-3xl">
           {{ clientName }}
         </h5>
       </div>
