@@ -1,5 +1,6 @@
 <template>
   <main class="overflow-x-hidden">
+    <TheTestimonialsSection />
     <TheHeader />
     <TheFamousWebsitesSection />
     <TheStunningWebsite />
