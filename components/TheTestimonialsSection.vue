@@ -1,6 +1,6 @@
 <template>
   <section class="py-48 flex items-center justify-center">
-    <article class="max-w-7xl text-center">
+    <article class="w-full lg:max-w-7xl text-center px-8 lg:px-0">
       <h3 class="text-huge uppercase mb-8">
         Rated Higher <strong>Than Wix And Squarespace.</strong>
       </h3>
@@ -10,7 +10,9 @@
         service in the world. (Not sure? Just google us.)
       </p>
 
-      <div class="grid grid-cols-3 gap-6 mb-20">
+      <div
+        class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20 place-content-center place-items-center"
+      >
         <TheReviewCard
           v-for="review in displayedReviews"
           :key="review.id"
