@@ -10,7 +10,7 @@
         service in the world. (Not sure? Just google us.)
       </p>
 
-      <div class="grid grid-cols-3 gap-6">
+      <div class="grid grid-cols-3 gap-6 mb-20">
         <TheReviewCard
           v-for="review in Reviews"
           :key="review.id"
@@ -19,13 +19,17 @@
           :rating="Math.floor(Math.random() * 5) + 1"
         />
       </div>
+      <TheButton button-text="Load More" :onclick="handleClick" />
     </article>
   </section>
 </template>
 <script setup>
 import { ref, onMounted } from "vue";
 const Reviews = ref([]);
-console.log(Reviews);
+const handleClick = () => {
+  console.log(Reviews);
+};
+
 onMounted(async () => {
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
