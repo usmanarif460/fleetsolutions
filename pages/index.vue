@@ -10,6 +10,7 @@
     <TheGuideSection />
     <TheFamousReview />
     <TheConvinceSection />
+    <TheCallToActionSection />
     <TheFooter />
   </main>
 </template>
