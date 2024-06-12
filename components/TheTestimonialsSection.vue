@@ -26,7 +26,9 @@
         button-text="Load More"
         :onClick="loadMoreReviews"
       />
-      <p v-else class="text-gray-600 font-medium">No more reviews</p>
+      <div v-else class="text-gray-600 font-medium h-96 w-full">
+        <p>No More Reviews</p>
+      </div>
     </article>
   </section>
 </template>

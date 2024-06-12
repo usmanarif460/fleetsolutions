@@ -11,11 +11,6 @@
         free!
       </p>
       <TheButton button-text="Apply to built your website by professionals" />
-      <TheReviewCard
-        rating="4"
-        client-name="Elison Parker"
-        review-text="I was ready to go to the next step in professionalizing my small business with an actual website of my own. But I didn’t know the first thing about how to build a website."
-      />
     </div>
   </section>
 </template>
