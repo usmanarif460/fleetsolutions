@@ -14,7 +14,7 @@
         <TheReviewCard
           v-for="review in Reviews"
           :key="review.id"
-          :client-name="review.title"
+          :client-name="review.title.slice(0, 12)"
           :review-text="review.body"
           :rating="Math.floor(Math.random() * 5) + 1"
         />
