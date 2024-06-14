@@ -1,8 +1,6 @@
 <template>
   <section class="py-14 bg-purple flex items-center justify-center">
-    <div
-      class="flex flex-col md:flex-row max-w-7xl items-center gap-5 px-8 lg:px-0"
-    >
+    <div class="flex flex-col md:flex-row max-w-7xl items-center gap-5 px-8 lg:px-0">
       <div class="p-2.5">
         <a href="#">
           <div class="w-[267px] h-[267px] bg-white/30 rounded-full">
@@ -11,16 +9,13 @@
         </a>
       </div>
       <div class="flex-1">
-        <blockquote
-          class="mb-4 text-[32px] text-white leading-[1.7em] font-bold"
-        >
+        <blockquote class="mb-4 text-lg md:text-3xl text-white leading-[1.7em] font-bold">
           “The Free Website Guys is the highest-rated web development company.”
         </blockquote>
         <div class="flex flex-col sm:flex-row text-xl items-center">
           <div class="flex-1 p-2.5 mb-4">
             <p class="text-accent-1">
-              <a href="#" class="text-accent-2 underline hover:no-underline"
-                >Top Web development companies for 2023
+              <a href="#" class="text-accent-2 underline hover:no-underline">Top Web development companies for 2023
               </a>
               <span class="text-white">- Hostinger</span>
             </p>
