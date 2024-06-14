@@ -1,5 +1,5 @@
 <template>
-  <section class="flex items-center justify-center py-[150px]">
+  <section class="flex items-center justify-center py-28">
     <div class="max-w-7xl px-8 lg:px-0">
       <div class="grid grid-cols-2 gap-12 items-center">
         <div class="p-2.5 col-span-2 md:col-span-1">
@@ -17,15 +17,11 @@
             founders to elderly business owners who need some extra support.
           </p>
         </div>
-        <div
-          class="flex justify-center md:justify-end col-span-2 md:col-span-1"
-        >
+        <div class="flex justify-center md:justify-end col-span-2 md:col-span-1">
           <div class="w-96 h-96 bg-red-500"></div>
         </div>
         <div class="col-span-2 flex items-center justify-center p-12">
-          <TheButton
-            button-text="Apply to get your website build by professionals."
-          />
+          <TheButton button-text="Apply to get your website build by professionals." />
         </div>
       </div>
     </div>
