@@ -1,5 +1,5 @@
 <template>
-  <section class="flex items-center justify-center py-[80px] bg-purple">
+  <section class="flex items-center justify-center py-12 bg-purple">
     <div class="p-2.5 text-white text-center max-w-[800px]">
       <h2 class="lg:text-huge mb-4 font-medium uppercase">
         We're Going To
@@ -15,10 +15,8 @@
           businesses without a professional website fail at 8x the normal rate.
         </p>
       </div>
-      <div class="p-[45px]">
-        <TheButton
-          button-text="Apply to get your website built by professionals -- for free!"
-        />
+      <div class="p-5">
+        <TheButton button-text="Apply in 2 minutes " />
       </div>
     </div>
   </section>

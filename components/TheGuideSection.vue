@@ -21,7 +21,7 @@
           <div class="w-96 h-96 bg-red-500"></div>
         </div>
         <div class="col-span-2 flex items-center justify-center p-12">
-          <TheButton button-text="Apply to get your website build by professionals." />
+          <TheButton button-text="Apply in 2 minutes" />
         </div>
       </div>
     </div>

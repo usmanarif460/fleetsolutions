@@ -1,17 +1,10 @@
 <template>
-  <section
-    class="flex items-center justify-center bg-neutral-300 py-[180px] relative"
-  >
+  <section class="flex items-center justify-center bg-neutral-300 md:py-28 py-14 relative">
     <div class="max-w-7xl px-8 lg:px-0">
       <h2 class="uppercase lg:text-huge pb-5 mb-4">
         Take a <strong>look on few examples</strong>
       </h2>
-      <Carousel
-        :items-to-show="1"
-        class="group"
-        :autoplay="3000"
-        :wrap-around="true"
-      >
+      <Carousel :items-to-show="1" class="group" :autoplay="3000" :wrap-around="true">
         <Slide v-for="slide in 10" :key="slide">
           <div class="relative carousel__item">
             {{ slide }}
@@ -28,7 +21,7 @@
 @import "vue3-carousel/dist/carousel.css";
 
 .carousel__item {
-  min-height: 600px;
+  min-height: 400px;
   width: 100%;
   background-color: var(--vc-clr-primary);
   color: var(--vc-clr-white);

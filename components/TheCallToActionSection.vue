@@ -1,5 +1,5 @@
 <template>
-  <section class="py-48 bg-purple flex items-center justify-center">
+  <section class="lg:py-48 py-24 bg-purple flex items-center justify-center">
     <div class="max-7xl text-center text-white">
       <h3 class="text-huge uppercase font-bold mb-8">Apply now</h3>
       <p class="text-2xl mb-4">
@@ -10,7 +10,7 @@
         If so, we’ll assign you a Senior Developer and build your website… for
         free!
       </p>
-      <TheButton button-text="Apply to built your website by professionals" />
+      <TheButton button-text="Apply in 2 minutes " />
     </div>
   </section>
 </template>

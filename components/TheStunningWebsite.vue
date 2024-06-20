@@ -1,7 +1,7 @@
 <template>
   <section class="flex items-center justify-center py-20">
     <div class="max-w-7xl px-8 lg:px-0">
-      <div class="grid grid-cols-2 gap-12 items-center place-items-center">
+      <div class="grid md:grid-cols-2 gap-12 items-center place-items-center">
         <div class="flex justify-center md:justify-end col-span-2 md:col-span-1">
           <div class="w-96 h-96 bg-red-500"></div>
         </div>
@@ -29,8 +29,8 @@
             helped thousands of entrepreneurs since 2019 to get a professional
             website for their business—for free.
           </p>
-          <div class="col-span-2 flex items-center justify-center p-12">
-            <TheButton button-text="Apply to get your website build by professionals." />
+          <div class=" flex items-center justify-center p-4">
+            <TheButton button-text="Apply in 2 minutes" />
           </div>
         </div>
       </div>

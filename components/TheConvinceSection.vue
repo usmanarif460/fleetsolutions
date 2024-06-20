@@ -21,7 +21,7 @@
             projects or recommend friends who do.
           </p>
           <div class="col-span-2 flex items-center justify-center p-12">
-            <TheButton button-text="Apply to get your website build by professionals." />
+            <TheButton button-text="Apply in 2 minutes" />
           </div>
         </div>
         <div class="flex justify-center md:justify-end col-span-2 md:col-span-1">

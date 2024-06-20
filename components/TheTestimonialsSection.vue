@@ -1,5 +1,5 @@
 <template>
-  <section class="py-24 md:py-48 flex items-center justify-center">
+  <section class="py-24 flex items-center justify-center">
     <article class="w-full lg:max-w-7xl text-center px-8 lg:px-0">
       <h3 class="text-lg md:text-4xl xl:text-huge uppercase mb-8">
         Rated Higher <strong>Than Wix And Squarespace.</strong>

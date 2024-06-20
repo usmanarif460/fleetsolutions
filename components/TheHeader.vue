@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gradient-to-r from-indigo-100 to-violet-400 w-full object-cover pb-[5vh] min-h-[60vh]">
-    <div class="max-w-7xl mx-auto w-full flex flex-col items-center justify-center gap-5 px-12">
-      <TheLogo class="md:self-start self-center" />
+    <div class="max-w-7xl mx-auto w-full flex flex-col items-center pb-5 justify-center gap-6 px-12">
+      <TheLogo class="lg:self-start self-center" />
       <div class="flex w-full items-center justify-center">
         <div class="flex gap-5 items-center justify-center w-full md:w-6/12">
           <img src="/images/crown-left.png" class="hidden md:block" alt="" />

@@ -1,6 +1,6 @@
 <template>
   <section class="pt-12 py-24 grid items-center justify-center">
-    <div class="max-w-7xl grid md:grid-cols-3 gap-32">
+    <div class="max-w-7xl grid lg:grid-cols-3 gap-16 lg:gap-32">
       <div>
         <p class="md:text-2xl text-lg font-medium"># of free websites we've built</p>
         <div class="flex items-center gap-3">
