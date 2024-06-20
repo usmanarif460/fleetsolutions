@@ -1,6 +1,6 @@
 <template>
   <blockquote
-    class="flex flex-col py-10 px-8 bg-white justify-between w-80 shadow-lg rounded-xl mt-12 h-[510px] overflow-auto">
+    class="flex flex-col py-6 px-8 bg-white justify-between w-80 shadow-lg rounded-xl mt-6 h-full overflow-auto">
     <div class="flex flex-col gap-4 md:gap-8 mb-6 h-full">
       <div class="flex items-center justify-center gap-4">
         <span v-for="star in stars" :key="star" :class="{
@@ -14,7 +14,7 @@
           </svg>
         </span>
       </div>
-      <div class="flex-1 flex items-center">
+      <div class="flex items-center">
         <p class="text-zinc-700 text-xl">
           {{ reviewText }}
         </p>

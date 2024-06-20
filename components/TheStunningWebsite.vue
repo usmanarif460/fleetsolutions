@@ -1,16 +1,16 @@
 <template>
-  <section class="flex items-center justify-center py-20">
+  <section class="flex items-center justify-center py-10 lg:py-20">
     <div class="max-w-7xl px-8 lg:px-0">
       <div class="grid md:grid-cols-2 gap-12 items-center place-items-center">
         <div class="flex justify-center md:justify-end col-span-2 md:col-span-1">
           <div class="w-96 h-96 bg-red-500"></div>
         </div>
-        <div class="p-2.5 col-span-2 md:col-span-1">
+        <div class="p-10 col-span-2 md:col-span-1">
           <p class="text-purple text-xl uppercase font-medium leading-loose">
             Join 10,000+ entrepreneurs
           </p>
           <h2 class="pb-2.5 mb-4 lg:text-huge uppercase">
-            who've <strong>\Received A Stunning Website For Free.</strong>
+            who've <strong>Received A Stunning Website For Free.</strong>
           </h2>
           <p class="mb-4">
             With a professional website for your business, potential clients are
