@@ -1,13 +1,13 @@
 <template>
   <main class="overflow-x-hidden">
-    <TheVideoTestimonial />
     <TheHeader />
-    <TheTestimonialsSection />
     <TheFamousWebsitesSection />
+    <TheTestimonialsSection />
     <TheStunningWebsite />
     <TheComparisonSection />
     <TheHugeSecretSection />
     <TheExample />
+    <TheVideoTestimonial />
     <TheFeaturesSection />
     <TheGuideSection />
     <TheFamousReview />
