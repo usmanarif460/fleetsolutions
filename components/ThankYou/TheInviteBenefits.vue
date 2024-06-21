@@ -1,8 +1,10 @@
 <template>
   <div class="py-10 border-b-2">
-    <div class="grid grid-cols-3 gap-5">
+    <div class="grid grid-cols-3 gap-5 text-center">
       <div>
-        <div class="relative w-1/4 mx-auto rounded-full shadow-lg p-6">
+        <div
+          class="relative w-1/4 mx-auto rounded-full shadow-lg p-6 bg-white/70"
+        >
           <IconsThankYouIconOne />
           <p
             class="absolute right-0 top-0 bg-purple px-2 text-white rounded-full text-lg font-bold"
@@ -16,7 +18,9 @@
         </p>
       </div>
       <div>
-        <div class="relative w-1/4 mx-auto rounded-full shadow-lg p-6">
+        <div
+          class="relative w-1/4 mx-auto rounded-full shadow-lg p-6 bg-white/70"
+        >
           <IconsThankYouIcontwo />
           <p
             class="absolute right-0 top-0 bg-purple px-2 text-white rounded-full text-lg font-bold"
@@ -30,7 +34,9 @@
         </p>
       </div>
       <div>
-        <div class="relative w-1/4 mx-auto rounded-full shadow-lg p-6">
+        <div
+          class="relative w-1/4 mx-auto rounded-full shadow-lg p-6 bg-white/70"
+        >
           <IconsThankYouIconThree />
           <p
             class="absolute right-0 top-0 bg-purple px-2 text-white rounded-full text-lg font-bold"
