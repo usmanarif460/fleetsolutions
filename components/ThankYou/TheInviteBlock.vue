@@ -7,7 +7,9 @@
       Invite Your Friends <strong>To Apply—And Earn.</strong>
     </div>
     <div class="flex items-center justify-center gap-3 text-lg">
-      <p class="underline text-blue-500 underline-offset-2">Earn $50</p>
+      <p class="underline text-blue-900 font-bold underline-offset-2">
+        Earn $50
+      </p>
       for every person you invite whose application we accept!
     </div>
     <div class="py-20 pointer-events-none inset-x-0 bottom-0 px-6 w-full">
