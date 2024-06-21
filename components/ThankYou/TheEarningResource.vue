@@ -1,0 +1,18 @@
+<template>
+  <div class="py-10">
+    <div>
+      <p>
+        *While we don’t earn money in offering free websites, a percentage of
+        our clients come back to us for paid projects further down the line
+        (which is why we offer an affiliate program). See more about
+        <a href="#" class="underline underline-offset-2 text-blue-400"
+          >why we offer free websites</a
+        >, and our affiliate program’s
+        <a href="#" class="underline underline-offset-2 text-blue-400"
+          >Terms and Conditions.</a
+        >
+      </p>
+    </div>
+  </div>
+</template>
+<script setup></script>
