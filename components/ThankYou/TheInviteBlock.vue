@@ -3,7 +3,7 @@
     <div class="text-center text-xl font-bold">
       Thanks. Your application has been submitted.
     </div>
-    <div class="text-huge">
+    <div class="text-huge uppercase">
       Invite Your Friends <strong>To Apply—And Earn.</strong>
     </div>
     <div class="flex items-center justify-center gap-3 text-lg">
@@ -54,7 +54,7 @@
         </div>
       </div>
       <div class="py-10">
-        <p class="text-huge text-center">
+        <p class="text-huge text-center uppercase">
           It’s Easy To <strong class="font-semibold">Get Started</strong>
         </p>
       </div>
