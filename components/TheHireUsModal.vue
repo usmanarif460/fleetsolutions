@@ -31,6 +31,7 @@
                   {{ currentLabel }} *
                 </label>
                 <input
+                  v-model="inputValue"
                   :type="currentType"
                   :id="`input-${currentStep}`"
                   class="focus:border-none focus:ring-0 text-4xl border-b-purple border-b-4 caret-purple placeholder:text-4xl placeholder:text-purple/80 block pt-2 h-20 w-96"
@@ -55,38 +56,52 @@
 </template>
 
 <script setup>
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
 
+const formData = ref({
+  clientName: "",
+  companyName: "",
+  title: "",
+  email: "",
+  phoneNumber: "",
+  companyAddress: "",
+});
 const steps = [
   {
     id: 1,
     label: "Enter Client Name Here",
     type: "text",
+    key: "clientName",
   },
   {
     id: 2,
     label: "Enter Company Name Here",
     type: "text",
+    key: "companyName",
   },
   {
     id: 3,
     label: "Enter Title Here",
     type: "text",
+    key: "title",
   },
   {
     id: 4,
     label: "Enter Your Email Here",
     type: "email",
+    key: "email",
   },
   {
     id: 5,
     label: "Enter Your Phone Number Here",
     type: "number",
+    key: "phoneNumber",
   },
   {
     id: 6,
     label: "Enter Your Company Address Here",
     type: "text",
+    key: "companyAddress",
   },
 ];
 
@@ -100,7 +115,21 @@ const currentType = computed(() => {
   return steps.find((step) => step.id === currentStep.value)?.type || "text";
 });
 
+const currentKey = computed(() => {
+  return steps.find((step) => step.id === currentStep.value)?.key || "";
+});
+
+const inputValue = ref("");
+
+watch(currentStep, () => {
+  inputValue.value = formData.value[currentKey.value] || "";
+});
+
 const submitStep = () => {
+  if (currentKey.value) {
+    formData.value[currentKey.value] = inputValue.value;
+    console.log("From Data", formData);
+  }
   if (currentStep.value < steps.length) {
     currentStep.value++;
   } else {
