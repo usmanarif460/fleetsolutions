@@ -6,7 +6,4 @@ export default defineNuxtConfig({
     // Experimental support for auto loading (see note):
     autoImport: true,
   },
-  serverMiddleware: [
-    { path: "/api/send-email", handler: "~/server/send-email.ts" },
-  ],
 });
