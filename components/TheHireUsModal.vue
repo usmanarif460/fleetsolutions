@@ -8,31 +8,31 @@
           <div class="px-2 flex-1">
             <div class="flex items-center gap-4">
               <span class="text-purple text-2xl flex items-center self-start">
-                <span>1</span>
+                <span>{{ currentStep }}</span>
                 <span class="text-purple block">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
-                    strokeWidth="{1.5}"
+                    stroke-width="1.5"
                     stroke="currentColor"
-                    className="size-6 text-purple"
+                    class="size-6 text-purple"
                   >
                     <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
                       d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
                     />
                   </svg>
                 </span>
               </span>
-              <form class="flex flex-col">
-                <label for="client-name" class="text-2xl">
-                  Enter Client Name Here *
+              <form class="flex flex-col" @submit.prevent="submitStep">
+                <label :for="`input-${currentStep}`" class="text-2xl">
+                  {{ currentLabel }} *
                 </label>
                 <input
-                  type="text"
-                  id="client-name"
+                  :type="currentType"
+                  :id="`input-${currentStep}`"
                   class="focus:border-none focus:ring-0 text-4xl border-b-purple border-b-4 caret-purple placeholder:text-4xl placeholder:text-purple/80 block pt-2 h-20 w-96"
                   placeholder="Type your answer here..."
                   required
@@ -53,11 +53,14 @@
     </div>
   </article>
 </template>
+
 <script setup>
+import { ref, computed } from "vue";
+
 const steps = [
   {
     id: 1,
-    label: "Client Name Here",
+    label: "Enter Client Name Here",
     type: "text",
   },
   {
@@ -86,4 +89,23 @@ const steps = [
     type: "text",
   },
 ];
+
+const currentStep = ref(1);
+
+const currentLabel = computed(() => {
+  return steps.find((step) => step.id === currentStep.value)?.label || "";
+});
+
+const currentType = computed(() => {
+  return steps.find((step) => step.id === currentStep.value)?.type || "text";
+});
+
+const submitStep = () => {
+  if (currentStep.value < steps.length) {
+    currentStep.value++;
+  } else {
+    // Handle the completion of all steps
+    alert("All steps completed!");
+  }
+};
 </script>
