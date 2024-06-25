@@ -133,7 +133,6 @@ const submitStep = () => {
   if (currentStep.value < steps.length) {
     currentStep.value++;
   } else {
-    // Handle the completion of all steps
     alert("All steps completed!");
   }
 };
