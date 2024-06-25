@@ -35,6 +35,7 @@
                   id="client-name"
                   class="focus:border-none focus:ring-0 text-4xl border-b-purple border-b-4 caret-purple placeholder:text-4xl placeholder:text-purple/80 block pt-2 h-20 w-96"
                   placeholder="Type your answer here..."
+                  required
                 />
                 <button
                   class="bg-primary max-w-max px-4 py-2 text-3xl text-white font-bold mt-4"
@@ -52,4 +53,37 @@
     </div>
   </article>
 </template>
-<script setup></script>
+<script setup>
+const steps = [
+  {
+    id: 1,
+    label: "Client Name Here",
+    type: "text",
+  },
+  {
+    id: 2,
+    label: "Enter Company Name Here",
+    type: "text",
+  },
+  {
+    id: 3,
+    label: "Enter Title Here",
+    type: "text",
+  },
+  {
+    id: 4,
+    label: "Enter Your Email Here",
+    type: "email",
+  },
+  {
+    id: 5,
+    label: "Enter Your Phone Number Here",
+    type: "number",
+  },
+  {
+    id: 6,
+    label: "Enter Your Company Address Here",
+    type: "text",
+  },
+];
+</script>
