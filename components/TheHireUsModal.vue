@@ -26,7 +26,7 @@
                   </svg>
                 </span>
               </span>
-              <div class="flex flex-col">
+              <form class="flex flex-col">
                 <label for="client-name" class="text-2xl">
                   Enter Client Name Here *
                 </label>
@@ -36,7 +36,12 @@
                   class="focus:border-none focus:ring-0 text-4xl border-b-purple border-b-4 caret-purple placeholder:text-4xl placeholder:text-purple/80 block pt-2 h-20 w-96"
                   placeholder="Type your answer here..."
                 />
-              </div>
+                <button
+                  class="bg-primary max-w-max px-4 py-2 text-3xl text-white font-bold mt-4"
+                >
+                  OK
+                </button>
+              </form>
             </div>
           </div>
           <div class="flex items-center justify-center">
