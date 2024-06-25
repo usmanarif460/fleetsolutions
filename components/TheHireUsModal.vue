@@ -46,7 +46,7 @@
               </form>
             </div>
           </div>
-          <div class="flex items-center justify-center">
+          <div class="lg:flex items-center justify-center hidden">
             <div class="h-96 w-96 bg-primary"></div>
           </div>
         </div>
