@@ -10,8 +10,24 @@
         If so, we’ll assign you a Senior Developer and build your website… for
         free!
       </p>
-      <TheButton button-text="Apply in 2 minutes " />
+      <TheButton button-text="Apply in 2 minutes" :onClick="openModal" />
     </div>
+    <TheHireUsModal :modalOpen="modalOpen" :closeModal="closeModal" />
   </section>
 </template>
-<script setup></script>
+
+<script setup>
+import { ref } from "vue";
+import TheButton from "./TheButton.vue";
+import TheHireUsModal from "./TheHireUsModal.vue";
+
+const modalOpen = ref(false);
+
+const openModal = () => {
+  modalOpen.value = true;
+};
+
+const closeModal = () => {
+  modalOpen.value = false;
+};
+</script>
