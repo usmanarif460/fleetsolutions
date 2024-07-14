@@ -8,15 +8,15 @@ export default defineNuxtConfig({
       "nuxt-mail",
       {
         message: {
-          to: "malenabeige@fthcapital.com",
+          to: "where-u-wnt-to-recieve-email",
         },
         smtp: {
           service: "gmail",
           host: "email-smtp.us-east-1.amazonaws.com",
           port: 587,
           auth: {
-            user: "sheraz.dev121@gmail.com",
-            pass: "fenralbfxutlgnho",
+            user: "your-gmail",
+            pass: "your-app-specific-password",
           },
         },
       },
