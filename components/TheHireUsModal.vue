@@ -3,7 +3,6 @@
     <article
       v-if="modalOpen"
       class="h-screen w-screen fixed top-0 right-0 bg-black/80 z-50"
-      @click="closeModal"
     >
       <div class="w-full h-full flex items-center justify-center">
         <dialog
@@ -63,7 +62,7 @@
 
 <script setup>
 import { ref, computed, watch } from "vue";
-
+const mail = useMail();
 defineProps({
   modalOpen: {
     type: Boolean,
@@ -142,15 +141,21 @@ watch(currentStep, () => {
   inputValue.value = formData.value[currentKey.value] || "";
 });
 
-const submitStep = () => {
+const submitStep = async () => {
   if (currentKey.value) {
     formData.value[currentKey.value] = inputValue.value;
-    console.log("Form Data", formData);
+    console.log("Form Data", formData.value.clientName);
   }
   if (currentStep.value < steps.length) {
     currentStep.value++;
   } else {
-    alert("All steps completed!");
+    const MailText = `Client Name: ${formData.value.clientName}\nCompany Name: ${formData.value.companyName}\nProject Title: ${formData.value.title}\nEmail: ${formData.value.email}\nPhone Number: ${formData.value.phoneNumber}\nCompany Address: ${formData.value.companyAddress}`;
+    const res = await mail.send({
+      from: formData.email,
+      subject: "New Form Submission",
+      text: MailText,
+    });
+    alert("Request Sent");
   }
 };
 </script>
