@@ -30,11 +30,22 @@
             website for their business—for free.
           </p>
           <div class=" flex items-center justify-center p-4">
-            <TheButton button-text="Apply in 2 minutes" />
+            <TheButton button-text="Apply in 2 minutes" @click="openModal" />
           </div>
         </div>
       </div>
     </div>
+    <TheHireUsModal :modalOpen="modalOpen" :closeModal="closeModal" @close="closeModal" />
+
   </section>
 </template>
-<script setup></script>
+<script setup>
+const modalOpen = ref(false);
+
+const openModal = () => {
+  modalOpen.value = true;
+};
+const closeModal = () => {
+  modalOpen.value = false;
+};
+</script>

@@ -10,9 +10,9 @@
         If so, we’ll assign you a Senior Developer and build your website… for
         free!
       </p>
-      <TheButton button-text="Apply in 2 minutes" :onClick="openModal" />
+      <TheButton button-text="Apply in 2 minutes" @click="openModal" />
     </div>
-    <TheHireUsModal :modalOpen="modalOpen" :closeModal="closeModal" />
+    <TheHireUsModal :modalOpen="modalOpen" :closeModal="closeModal" @close="closeModal" />
   </section>
 </template>
 

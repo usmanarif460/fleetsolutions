@@ -21,7 +21,7 @@
             projects or recommend friends who do.
           </p>
           <div class="col-span-2 flex items-center justify-center p-12">
-            <TheButton button-text="Apply in 2 minutes" />
+            <TheButton button-text="Apply in 2 minutes" @click="openModal" />
           </div>
         </div>
         <div class="flex justify-center md:justify-end col-span-2 md:col-span-1">
@@ -29,6 +29,17 @@
         </div>
       </div>
     </div>
+    <TheHireUsModal :modalOpen="modalOpen" :closeModal="closeModal" @close="closeModal" />
+
   </section>
 </template>
-<script setup></script>
+<script setup>
+const modalOpen = ref(false);
+
+const openModal = () => {
+  modalOpen.value = true;
+};
+const closeModal = () => {
+  modalOpen.value = false;
+};
+</script>

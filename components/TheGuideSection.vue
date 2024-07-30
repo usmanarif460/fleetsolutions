@@ -21,10 +21,21 @@
           <div class="w-96 h-96 bg-red-500"></div>
         </div>
         <div class="col-span-2 flex items-center justify-center p-12">
-          <TheButton button-text="Apply in 2 minutes" />
+          <TheButton button-text="Apply in 2 minutes" @click="openModal" />
         </div>
       </div>
     </div>
+    <TheHireUsModal :modalOpen="modalOpen" :closeModal="closeModal" @close="closeModal" />
+
   </section>
 </template>
-<script setup></script>
+<script setup>
+const modalOpen = ref(false);
+
+const openModal = () => {
+  modalOpen.value = true;
+};
+const closeModal = () => {
+  modalOpen.value = false;
+};
+</script>

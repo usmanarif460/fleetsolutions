@@ -1,10 +1,6 @@
 <template>
-  <div
-    class="bg-gradient-to-r from-indigo-100 to-violet-400 w-full object-cover pb-[5vh] min-h-[60vh]"
-  >
-    <div
-      class="max-w-7xl mx-auto w-full flex flex-col items-center pb-5 justify-center gap-6 px-12"
-    >
+  <div class="bg-gradient-to-r from-indigo-100 to-violet-400 w-full object-cover pb-[5vh] min-h-[60vh]">
+    <div class="max-w-7xl mx-auto w-full flex flex-col items-center pb-5 justify-center gap-6 px-12">
       <TheLogo class="lg:self-start self-center" />
       <div class="flex w-full items-center justify-center">
         <div class="flex gap-5 items-center justify-center w-full md:w-6/12">
@@ -18,16 +14,26 @@
         </div>
       </div>
 
-      <h1
-        class="text-center text-white text-lg lg:text-6xl uppercase font-bold"
-      >
+      <h1 class="text-center text-white text-lg lg:text-6xl uppercase font-bold">
         Design Your website, promote it, develop it and grow your
         <span class="underline text-primary">business</span>
         with us.
       </h1>
-      <TheButton button-text="Apply in 2 minutes" />
+      <TheButton button-text="Apply in 2 minutes" @click="openModal" />
     </div>
   </div>
+  <TheHireUsModal :modalOpen="modalOpen" :closeModal="closeModal" @close="closeModal" />
+
 </template>
 
-<script setup></script>
+<script setup>
+const modalOpen = ref(false);
+
+const openModal = () => {
+  modalOpen.value = true;
+};
+
+const closeModal = () => {
+  modalOpen.value = false;
+};
+</script>
