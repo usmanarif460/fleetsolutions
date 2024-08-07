@@ -16,8 +16,8 @@ export default defineNuxtConfig({
           host: "email-smtp.us-east-1.amazonaws.com",
           port: 587,
           auth: {
-            user: "your-gmail",
-            pass: "your-app-specific-password",
+            user: process.env.SITE_MAIL_RECIEVER,
+            pass: process.env.SMTP_SERVER_PASSWORD,
           },
         },
       },
