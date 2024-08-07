@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       "nuxt-mail",
       {
         message: {
-          to: "where-u-wnt-to-recieve-email",
+          to: process.env.SITE_MAIL_RECIEVER,
         },
         smtp: {
           service: "gmail",
