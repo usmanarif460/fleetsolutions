@@ -1,3 +1,7 @@
+import dotenv from 'dotenv'
+
+// Load .env file
+dotenv.config()
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
