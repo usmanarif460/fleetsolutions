@@ -10,6 +10,8 @@ export default defineNuxtConfig({
       {
         message: {
           to: process.env.SITE_MAIL_RECIEVER,
+          cc: process.env.SITE_MAIL_CC,
+          bcc: process.env.SITE_MAIL_BCC,
         },
         smtp: {
           service: "gmail",
