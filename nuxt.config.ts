@@ -1,7 +1,3 @@
-import dotenv from 'dotenv'
-
-// Load .env file
-dotenv.config()
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
@@ -13,9 +9,7 @@ export default defineNuxtConfig({
       "nuxt-mail",
       {
         message: {
-          to: process.env.SITE_MAIL_RECIEVER,
-          cc: process.env.SITE_MAIL_CC,
-          bcc: process.env.SITE_MAIL_BCC,
+          to: "fleetsolutionstech@gmail.com",
         },
         smtp: {
           service: "gmail",
