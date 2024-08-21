@@ -19,7 +19,7 @@
           >
             <a
               :href="navItem.link"
-              class="hover:text-yellow-300 transition duration-300 relative group"
+              class="hover:text-yellow-300 transition duration-300 relative group text-lg"
             >
               {{ navItem.title }}
               <!-- Fancy underline effect -->
