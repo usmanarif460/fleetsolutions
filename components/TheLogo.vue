@@ -1,12 +1,15 @@
 <template>
-  <div>
+  <a href="/" class="flex flex-col items-center">
     <img
-      class="w-24 h-24 object-cover"
+      class="w-12 h-12"
       :class="className"
       src="/images/2.png"
-      alt=""
+      alt="Fleet Solutions Logo"
     />
-  </div>
+    <p class="font-extrabold text-sm tracking-wide select-none text-violet-400">
+      fleet <span class="text-primary">Solutions</span>
+    </p>
+  </a>
 </template>
 
 <script setup>
