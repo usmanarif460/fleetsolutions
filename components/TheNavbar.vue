@@ -12,19 +12,18 @@
             v-for="(navItem, index) in navLinks"
             :key="index"
             :class="{
-              'text-yellow-300 font-bold relative':
-                currentPath === navItem.link,
+              'text-primary font-bold relative': currentPath === navItem.link,
               'text-white': currentPath !== navItem.link,
             }"
           >
             <a
               :href="navItem.link"
-              class="hover:text-yellow-300 transition duration-300 relative group text-lg"
+              class="hover:text-primary transition duration-300 relative group text-lg"
             >
               {{ navItem.title }}
               <!-- Fancy underline effect -->
               <span
-                class="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-300 transition-all duration-500 group-hover:w-full"
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-500 group-hover:w-full"
                 :class="{ 'w-full': currentPath === navItem.link }"
               ></span>
             </a>
