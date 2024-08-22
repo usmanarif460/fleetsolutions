@@ -5,7 +5,7 @@
       <div
         class="lg:col-span-2 col-span-5 h-96 bg-purple flex items-center justify-center text-3xl"
       >
-        Video Here
+        <img src="/public/images/site_3.jpg" alt="Review On Site" />
       </div>
       <article
         class="col-span-5 lg:col-span-3 h-96 flex items-center bg-white justify-center"
