@@ -2,12 +2,18 @@
   <section class="flex items-center justify-center py-10 lg:py-20">
     <div class="max-w-7xl px-8 lg:px-0">
       <div class="grid md:grid-cols-2 gap-12 items-center place-items-center">
-        <div class="flex justify-center md:justify-end col-span-2 md:col-span-1">
-          <div class="w-96 h-96 bg-red-500"></div>
+        <div
+          class="flex justify-center md:justify-end col-span-2 md:col-span-1"
+        >
+          <img
+            src="/public/images/site_1.jpg"
+            alt="Showcasing a website on the MacBook"
+            class="w-full h-full"
+          />
         </div>
         <div class="p-10 col-span-2 md:col-span-1">
           <p class="text-purple text-xl uppercase font-medium leading-loose">
-            Join 10,000+ entrepreneurs
+            Join 10,00+ entrepreneurs
           </p>
           <h2 class="pb-2.5 mb-4 lg:text-huge uppercase">
             who've <strong>Received A Stunning Website For Free.</strong>
@@ -29,14 +35,17 @@
             helped thousands of entrepreneurs since 2019 to get a professional
             website for their business—for free.
           </p>
-          <div class=" flex items-center justify-center p-4">
+          <div class="flex items-center justify-center p-4">
             <TheButton button-text="Apply in 2 minutes" @click="openModal" />
           </div>
         </div>
       </div>
     </div>
-    <TheHireUsModal :modalOpen="modalOpen" :closeModal="closeModal" @close="closeModal" />
-
+    <TheHireUsModal
+      :modalOpen="modalOpen"
+      :closeModal="closeModal"
+      @close="closeModal"
+    />
   </section>
 </template>
 <script setup>
