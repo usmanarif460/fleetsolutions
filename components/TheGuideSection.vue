@@ -17,16 +17,21 @@
             founders to elderly business owners who need some extra support.
           </p>
         </div>
-        <div class="flex justify-center md:justify-end col-span-2 md:col-span-1">
-          <div class="w-96 h-96 bg-red-500"></div>
+        <div
+          class="flex justify-center md:justify-end col-span-2 md:col-span-1"
+        >
+          <img src="/public/images/site_2.jpg" alt="" class="w-full h-full" />
         </div>
         <div class="col-span-2 flex items-center justify-center p-12">
           <TheButton button-text="Apply in 2 minutes" @click="openModal" />
         </div>
       </div>
     </div>
-    <TheHireUsModal :modalOpen="modalOpen" :closeModal="closeModal" @close="closeModal" />
-
+    <TheHireUsModal
+      :modalOpen="modalOpen"
+      :closeModal="closeModal"
+      @close="closeModal"
+    />
   </section>
 </template>
 <script setup>
