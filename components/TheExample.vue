@@ -7,7 +7,7 @@
         Take a <strong>look on few examples</strong>
       </h2>
       <Carousel
-        :items-to-show="2"
+        :items-to-show="itemsToShow"
         class="group"
         :autoplay="3000"
         :wrap-around="true"
@@ -17,7 +17,7 @@
             <img
               :src="`/images/carousel/image_${slide + 5}.jpg`"
               alt=""
-              class="object-cover h-full"
+              class="object-cover lg:object-fill h-full !w-full"
             />
           </div>
         </Slide>
@@ -28,6 +28,26 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { ref, onMounted, onUnmounted, computed } from "vue";
+
+const itemsToShow = ref(2); // Default value
+
+const updateItemsToShow = () => {
+  itemsToShow.value = window.innerWidth < 768 ? 1 : 2;
+};
+
+onMounted(() => {
+  updateItemsToShow(); // Set initial value
+  window.addEventListener("resize", updateItemsToShow);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("resize", updateItemsToShow);
+});
+</script>
+
 <style lang="css">
 @import "vue3-carousel/dist/carousel.css";
 
