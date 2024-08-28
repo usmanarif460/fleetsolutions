@@ -12,9 +12,13 @@
         :autoplay="3000"
         :wrap-around="true"
       >
-        <Slide v-for="slide in 10" :key="slide">
-          <div class="relative carousel__item">
-            {{ slide }}
+        <Slide v-for="slide in 5" :key="slide">
+          <div class="relative carousel__item h-28 rounded-xl">
+            <img
+              :src="`/images/carousel/image_${slide + 5}.jpg`"
+              alt=""
+              class="object-cover"
+            />
           </div>
         </Slide>
         <template #addons>
