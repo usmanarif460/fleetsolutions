@@ -1,5 +1,5 @@
 <template>
-  <main class="overflow-x-hidden">
+  <main class="overflow-x-hidden bg-zinc-50">
     <TheNavbar />
     <TheHireUsModal />
     <TheHeader />
