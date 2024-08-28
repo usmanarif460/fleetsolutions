@@ -1,5 +1,5 @@
 <template>
-  <section class="lg:py-24 flex items-center justify-center">
+  <section class="lg:py-24 flex items-center justify-center" id="projects">
     <div class="p-2.5 max-w-7xl">
       <h3 class="uppercase font-bold lg:text-5xl py-9 text-center">
         10,00+ websites built
