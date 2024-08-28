@@ -17,7 +17,7 @@
             <img
               :src="`/images/carousel/image_${slide + 5}.jpg`"
               alt=""
-              class="object-cover"
+              class="object-cover h-full"
             />
           </div>
         </Slide>
