@@ -2,9 +2,13 @@
   <section class="max-w-7xl px-8 lg:px-0 mx-auto">
     <h2 class="uppercase lg:text-huge pb-5 mb-4"></h2>
     <Carousel :items-to-show="1" class="group min-w-96" :wrap-around="true">
-      <Slide v-for="slide in 10" :key="slide">
-        <div class="relative carousel__item bg-black">
-          {{ slide }}
+      <Slide v-for="slide in 5" :key="slide">
+        <div class="relative carousel__item bg-black h-48">
+          <img
+            :src="`/images/carousel/image_${slide}.jpg`"
+            alt=""
+            class="h-full w-full bg-red-500 object-cover"
+          />
         </div>
       </Slide>
       <template #addons>
